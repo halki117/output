@@ -2,3 +2,5 @@ Laradockとは？
 PHPでの開発に必要なミドルウェアやツールをDockerコンテナとしてまとめて提供してくれるパッケージ
 
 dokcer-compose とは複数のDockerコンテナを連携して起動・停止させることができるコマンド
+
+docker-compose execは既に起動しているコンテナでコマンドを実行します。
