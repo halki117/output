@@ -1,0 +1,2 @@
+・ワークスペースを起動
+docker-compose exec --user=laradock workspase bash
