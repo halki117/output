@@ -2,5 +2,8 @@ Dockerとは？
 
 ホストOSの上にゲストOSを構築するような仮想化型ホストとはちがい、ホストOS上にコンテナを構築する形をとる。こちらの方が起動が速い
 
+・コンテナを作成、起動
+docker run  
+
 ・ワークスペースを起動
 docker-compose exec --user=laradock workspase bash
