@@ -8,6 +8,11 @@ docker run
 ・ワークスペースを起動
 docker-compose exec --user=laradock workspase bash
 
+・コンテナ内で操作
+docker exec -it コンテナ名 
+
 
 - docker記事
   https://qiita.com/gyu_outputs/items/8fd21053bdb680bd81cc
+
+
