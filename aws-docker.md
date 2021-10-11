@@ -61,4 +61,4 @@
 <br>
 データベースにアクセスしてrootユーザーに対して外部からアクセスできる様に設定をした。
 参考記事: https://teratail.com/questions/45324
-grant all privileges on *.* to 'root'@'10.0.0.240' identified by 'root' with grant option;
+mysql> grant all privileges on *.* to 'root'@'10.0.0.240' identified by 'root' with grant option;
