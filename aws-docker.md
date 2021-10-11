@@ -47,11 +47,11 @@
  <br>
  <br>
  
-- phpコンテナにアクセスしてstorageの権限を変更した 
+- phpコンテナにアクセスしてstorageの権限を変更した<br>
  [ec2-user@ip-10-0-0-240 www]$ docker exec -it aws_task2_nginxContainer bash
  root@a9f0e8f2c37b:/src# chmod -R 777 storage
  
- ※アプリの固有キーを生成。これがないとエラーになる。
+ ※アプリの固有キーを生成。これがないとエラーになる。<br>
  root@a9f0e8f2c37b:/src# php artisan key:generate
  Application key set successfully.
 
