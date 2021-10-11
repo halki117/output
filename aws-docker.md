@@ -62,3 +62,11 @@
 データベースにアクセスしてrootユーザーに対して外部からアクセスできる様に設定をした。
 参考記事: https://teratail.com/questions/45324
 mysql> grant all privileges on *.* to 'root'@'10.0.0.240' identified by 'root' with grant option;
+
+
+<br>
+<br>
+<br>
+- .envを変更した際はキャッシュのクリア
+root@a9f0e8f2c37b:/src# php artisan cache:clear
+root@a9f0e8f2c37b:/src# php artisan config:cache
