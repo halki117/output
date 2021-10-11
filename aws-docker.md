@@ -43,21 +43,22 @@
   
   
   
-  
-  root@a9f0e8f2c37b:/src# chmod -R 777 storage
-root@a9f0e8f2c37b:/src# exit
-exit
-[ec2-user@ip-10-0-0-240 www]$ docker exec -it aws_task2_nginxContainer bash
-root@9a7650c58d30:/# cd src
-root@9a7650c58d30:/src# chmod -R 777 storage
-root@9a7650c58d30:/src# exit
-exit
-[ec2-user@ip-10-0-0-240 www]$ docker exec -it aws_task2_phpContainer bash
-root@a9f0e8f2c37b:/src# php artisan key:generate
-Application key set successfully.
+ <br>
+ <br>
+ <br>
+ 
+- phpコンテナにアクセスしてstorageの権限を変更した 
+ [ec2-user@ip-10-0-0-240 www]$ docker exec -it aws_task2_nginxContainer bash
+ root@a9f0e8f2c37b:/src# chmod -R 777 storage
+ 
+ ※アプリの固有キーを生成。これがないとエラーになる。
+ root@a9f0e8f2c37b:/src# php artisan key:generate
+ Application key set successfully.
 
 
-  
-
-
-
+<br>
+<br>
+<br>
+データベースにアクセスしてrootユーザーに対して外部からアクセスできる様に設定をした。
+参考記事: https://teratail.com/questions/45324
+grant all privileges on *.* to 'root'@'10.0.0.240' identified by 'root' with grant option;
