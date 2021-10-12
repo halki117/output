@@ -49,6 +49,7 @@
  
 - phpコンテナにアクセスしてstorageの権限を変更した<br>
  [ec2-user@ip-10-0-0-240 www]$ docker exec -it aws_task2_nginxContainer bash
+ <br>
  root@a9f0e8f2c37b:/src# chmod -R 777 storage
  
  ※アプリの固有キーを生成。これがないとエラーになる。<br>
