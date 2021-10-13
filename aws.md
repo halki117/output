@@ -24,3 +24,9 @@
  
 - 502エラー
   サーバー側の何かしらのエラー
+
+
+- 独自ドメイン参考記事
+https://katsuhiroblog.com/aws-wordpress-ssl/
+https://katsuhiroblog.com/aws-wordpress/
+https://qiita.com/nakanishi03/items/25278fb4dfad60ebfac4
