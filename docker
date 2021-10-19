@@ -14,5 +14,12 @@ docker exec -it コンテナ名
 
 - docker記事
   https://qiita.com/gyu_outputs/items/8fd21053bdb680bd81cc
+  
+  
+エラー
 
+```
+OCI runtime exec failed: exec failed: container_linux.go:367: starting container process caused: exec: "-bash": executable file not found in $PATH: unknown
+```
 
+https://qiita.com/kuroro_ru/items/e3faa82c3e27eee9d913
